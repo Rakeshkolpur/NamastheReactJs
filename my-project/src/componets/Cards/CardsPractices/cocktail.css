@@ -1,0 +1,30 @@
+.cocktail-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items in a row */
+    gap: 10px; /* space between items */
+    padding: 20px;
+  }
+  
+  .cocktail-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cocktail-item h4 {
+    font-size: 16px;
+    margin: 10px 0;
+     /* prevents text from wrapping */
+    overflow: hidden; /* hides the overflowing text */
+    text-overflow:clip; /* adds "..." when text overflows */
+  }
+  .cocktail-item .img{
+    width: 100%;
+  }
+ @media (max-width:789px){
+    .cocktail-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }

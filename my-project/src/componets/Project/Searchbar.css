@@ -1,0 +1,53 @@
+/* Search section styling */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f8f8;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .dropdown select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  .dropdown select option {
+    padding: 10px;
+  }
+  /* Responsive design */
+@media (max-width: 768px) {
+    .search-section {
+      flex-direction: column;
+    }
+  
+    .search-bar {
+      margin-bottom: 20px;
+    }
+  }
